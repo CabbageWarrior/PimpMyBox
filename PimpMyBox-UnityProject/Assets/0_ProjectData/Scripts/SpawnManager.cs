@@ -72,3 +72,46 @@ public class SpawnManager : MonoBehaviour
         }
     }
 }
+
+
+public class GameManager : MonoBehaviour
+{
+    int min;
+    int sec;
+
+    public float timer;
+    float timePassed;
+
+    List<Forniture> player1 = new List<Forniture>();
+    List<Forniture> player2 = new List<Forniture>();
+    
+    private void Start()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+
+    private void Update()
+    {
+        timePassed += Time.deltaTime;
+
+        if(timePassed >= timer)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        foreach (var item in GameObject.Find("Player1").GetComponent<Player>().Inv.inventory)
+        {
+            player1.Add(item.fornitureInfos);
+        }
+
+        foreach (var item in GameObject.Find("Player2").GetComponent<Player>().Inv.inventory)
+        {
+            player1.Add(item.fornitureInfos);
+        }
+
+
+    }
+}
