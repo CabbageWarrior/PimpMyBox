@@ -3,7 +3,7 @@
 public class PlayerInventory : MonoBehaviour
 {
     public System.Action<int> RemovedFromInventory;
-    public Forniture[] inventory = new Forniture[3];
+    public FornitureGameplayObject[] inventory = new FornitureGameplayObject[3];
 
     public void Drop(int index)
     {
@@ -19,6 +19,4 @@ public class PlayerInventory : MonoBehaviour
             Drop(i);
         }
     }
-
-
 }

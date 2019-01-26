@@ -5,9 +5,9 @@ public class FornitureGameplayObject : MonoBehaviour
     public System.Action<Player> PickUp;
     public Forniture fornitureInfos;
     private SpriteRenderer sR;
-
     Vector2 storageLocation = new Vector2(100f, 100f);
 
+    public bool isSchifo = false;
 
     private void Awake()
     {
@@ -15,7 +15,7 @@ public class FornitureGameplayObject : MonoBehaviour
         sR.sprite = fornitureInfos.onMapView;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.GetComponent<Player>())
         {

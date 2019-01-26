@@ -14,6 +14,9 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb2D;
 
+    private PlayerInventory inv;
+
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -41,4 +44,42 @@ public class Player : MonoBehaviour
 
         currentSpeed = rb2D.velocity.magnitude;
     }
+
+    #region Collisions
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        House house = other.GetComponent<House>();
+
+        if (house != null)
+        {
+            for (int i = 0; i < inv.inventory.Length; i++)
+            {
+                if (house.AddItem(inv.inventory[i]))
+                    inv.Drop(i);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.tag == "Dump")
+        {
+            bool buttonA = Input.GetButtonDown("AButton-P" + playerNumber.ToString());
+            bool buttonB = Input.GetButtonDown("BButton-P" + playerNumber.ToString());
+            bool buttonX = Input.GetButtonDown("XButton-P" + playerNumber.ToString());
+            bool buttonY = Input.GetButtonDown("YButton-P" + playerNumber.ToString());
+
+            if (buttonA)
+                inv.Drop(0);
+            if (buttonB)
+                inv.Drop(1);
+            if (buttonX)
+                inv.Drop(2);
+            if (buttonY)
+                inv.DropAll();
+        }
+    }
+
+    #endregion  
+
 }
