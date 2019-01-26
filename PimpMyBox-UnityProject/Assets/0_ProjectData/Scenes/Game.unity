@@ -398,11 +398,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.571
       objectReference: {fileID: 0}
     - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.249
       objectReference: {fileID: 0}
     - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_LocalPosition.z
@@ -431,6 +431,23 @@ Prefab:
     - target: {fileID: 1964116559952222, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_Name
       value: Player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962568873960500, guid: ae2676cfcc55ef244b4b8ae29462d282,
+        type: 2}
+      propertyPath: dashImage
+      value: 
+      objectReference: {fileID: 1816418710}
+    - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
@@ -1448,11 +1465,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.097
       objectReference: {fileID: 0}
     - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.229
       objectReference: {fileID: 0}
     - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1486,6 +1503,23 @@ Prefab:
         type: 2}
       propertyPath: playerNumber
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962568873960500, guid: ae2676cfcc55ef244b4b8ae29462d282,
+        type: 2}
+      propertyPath: dashImage
+      value: 
+      objectReference: {fileID: 317333608}
+    - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4719483781477450, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
