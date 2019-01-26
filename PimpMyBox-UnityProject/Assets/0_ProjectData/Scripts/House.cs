@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class House : MonoBehaviour
 {
     List<FornitureGameplayObject> storedForniture = new List<FornitureGameplayObject>();
+    public Player owner;
 
     public bool AddItem (FornitureGameplayObject item)
     {
