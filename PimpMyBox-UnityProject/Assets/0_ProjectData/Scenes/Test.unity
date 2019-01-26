@@ -190,11 +190,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4111908599987396, guid: d7f2fff5908489e4c9f319ac1085f42a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.5602134
+      value: -13.33
       objectReference: {fileID: 0}
     - target: {fileID: 4111908599987396, guid: d7f2fff5908489e4c9f319ac1085f42a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.22703153
+      value: 9.2
       objectReference: {fileID: 0}
     - target: {fileID: 4111908599987396, guid: d7f2fff5908489e4c9f319ac1085f42a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -219,10 +219,6 @@ Prefab:
     - target: {fileID: 4111908599987396, guid: d7f2fff5908489e4c9f319ac1085f42a, type: 2}
       propertyPath: m_RootOrder
       value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1674648063080716, guid: d7f2fff5908489e4c9f319ac1085f42a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7f2fff5908489e4c9f319ac1085f42a, type: 2}
@@ -1051,9 +1047,20 @@ Prefab:
       propertyPath: m_Size.x
       value: 2.16298
       objectReference: {fileID: 0}
+    - target: {fileID: 114842883658845310, guid: 3c9985161b774e647939d4357fc36fe2,
+        type: 2}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 857759079}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c9985161b774e647939d4357fc36fe2, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &857759079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114962568873960500, guid: ae2676cfcc55ef244b4b8ae29462d282,
+    type: 2}
+  m_PrefabInternal: {fileID: 2023207155}
+  m_Script: {fileID: 11500000, guid: 005816242e02a3f4e8a40525da0b1dc8, type: 3}
 --- !u!1001 &917883608
 Prefab:
   m_ObjectHideFlags: 0
@@ -2644,12 +2651,12 @@ Prefab:
     - target: {fileID: 58502791370292178, guid: ae2676cfcc55ef244b4b8ae29462d282,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 58826939021526494, guid: ae2676cfcc55ef244b4b8ae29462d282,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}

@@ -22,9 +22,12 @@ public class PlayerInventory : MonoBehaviour
     }
     public void Drop(int index)
     {
-        inventory[index] = null;
-        if (RemovedFromInventory != null)
-            RemovedFromInventory.Invoke(index);
+        if (inventory[index] != null)
+        {
+            inventory[index] = null;
+            if (RemovedFromInventory != null)
+                RemovedFromInventory.Invoke(index);
+        }
     }
 
     public void DropAll()
