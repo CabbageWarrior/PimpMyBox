@@ -14,6 +14,8 @@ public class SpawnManager : MonoBehaviour
 
     public SpawnPoint[] usedSpawnPoints;
 
+    public GameInterfaceController gic;
+
     private void Awake()
     {
         System.Random rnd = new System.Random();
@@ -23,7 +25,7 @@ public class SpawnManager : MonoBehaviour
         foreach (var item in fornitureDatabase)
         {
             spawnQueue.Enqueue(item);
-            item.PickUp += (a) => { currentItemNumber--; SpawnNewObject(); };
+            item.PickUp += (a) => { currentItemNumber--; SpawnNewObject(); gic.RefreshUI(); };
         }
     }
 
