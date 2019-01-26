@@ -1376,6 +1376,57 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 578245990}
   m_CullTransparentMesh: 0
+--- !u!1001 &606530383
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1527.238
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 471.79636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -6.540349
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423976575708350, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114016501106819484, guid: 319bc55816d9aad4c906dfd24362113d,
+        type: 2}
+      propertyPath: timerLabel
+      value: 
+      objectReference: {fileID: 19217239}
+    - target: {fileID: 1588812065278746, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 319bc55816d9aad4c906dfd24362113d, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &684578311
 Prefab:
   m_ObjectHideFlags: 0
@@ -2136,16 +2187,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: fornitureDatabase.Array.size
-      value: 21
-      objectReference: {fileID: 0}
     - target: {fileID: 4880643688137642, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -2178,41 +2219,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: gic
-      value: 
-      objectReference: {fileID: 1575458402}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 1317131477}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 1317131476}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 1317131475}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 1317131474}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 1317131473}
-    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
-        type: 2}
-      propertyPath: usedSpawnPoints.Array.data[5]
-      value: 
-      objectReference: {fileID: 1317131472}
     - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
         type: 2}
       propertyPath: fornitureDatabase.Array.data[0]
@@ -2318,6 +2324,45 @@ Prefab:
       propertyPath: fornitureDatabase.Array.data[20]
       value: 
       objectReference: {fileID: 1387866414}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: usedSpawnPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1317131477}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: usedSpawnPoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1317131476}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: usedSpawnPoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1317131475}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: usedSpawnPoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 1317131474}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: usedSpawnPoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 1317131473}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: usedSpawnPoints.Array.data[5]
+      value: 
+      objectReference: {fileID: 1317131472}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: gic
+      value: 
+      objectReference: {fileID: 1575458402}
+    - target: {fileID: 1543709649524750, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
+      propertyPath: m_Name
+      value: SpawnManager
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
   m_IsPrefabAsset: 0
