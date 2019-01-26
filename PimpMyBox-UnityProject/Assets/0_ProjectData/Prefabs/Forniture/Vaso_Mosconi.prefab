@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4136768271383204}
   - component: {fileID: 212943095063193402}
   - component: {fileID: 114900234746971774}
+  - component: {fileID: 58296893517017206}
   m_Layer: 0
   m_Name: Vaso_Mosconi
   m_TagString: Untagged
@@ -41,6 +42,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58296893517017206
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1514495201746086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.92
 --- !u!114 &114900234746971774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fornitureInfos: {fileID: 11400000, guid: 1da8a6038e0713f47b0914e1cb2529f3, type: 2}
+  isSchifo: 0
 --- !u!212 &212943095063193402
 SpriteRenderer:
   m_ObjectHideFlags: 1

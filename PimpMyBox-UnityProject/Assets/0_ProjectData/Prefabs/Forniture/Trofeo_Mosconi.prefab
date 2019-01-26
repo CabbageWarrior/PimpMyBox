@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4407553829846894}
   - component: {fileID: 212996688177947548}
   - component: {fileID: 114379517250267278}
+  - component: {fileID: 58731802108156944}
   m_Layer: 0
   m_Name: Trofeo_Mosconi
   m_TagString: Untagged
@@ -41,6 +42,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58731802108156944
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1483656978081378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.92
 --- !u!114 &114379517250267278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fornitureInfos: {fileID: 11400000, guid: 0f98b742c516e444a82eb1ec5b15f169, type: 2}
+  isSchifo: 0
 --- !u!212 &212996688177947548
 SpriteRenderer:
   m_ObjectHideFlags: 1

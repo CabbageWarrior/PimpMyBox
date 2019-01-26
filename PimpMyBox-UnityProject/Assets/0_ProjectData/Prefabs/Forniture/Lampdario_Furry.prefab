@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4370350008113082}
   - component: {fileID: 212086404157775362}
   - component: {fileID: 114905517080398168}
+  - component: {fileID: 58060534569054068}
   m_Layer: 0
   m_Name: Lampdario_Furry
   m_TagString: Untagged
@@ -41,6 +42,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58060534569054068
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1644663161837356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.92
 --- !u!114 &114905517080398168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fornitureInfos: {fileID: 11400000, guid: efde566b414193a429c43b3250f41323, type: 2}
+  isSchifo: 0
 --- !u!212 &212086404157775362
 SpriteRenderer:
   m_ObjectHideFlags: 1
