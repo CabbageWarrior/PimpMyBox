@@ -8,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     private Queue<FornitureGameplayObject> spawnQueue = new Queue<FornitureGameplayObject>();
     public FornitureGameplayObject[] fornitureDatabase;
 
-    int currentItemNumber = 1;
+    int currentItemNumber = 0;
 
     public float spawnDelay = 3f;
 
@@ -23,13 +23,13 @@ public class SpawnManager : MonoBehaviour
         foreach (var item in fornitureDatabase)
         {
             spawnQueue.Enqueue(item);
-            item.PickUp += (a) => { currentItemNumber--; if(currentItemNumber <3)SpawnNewObject(); };
-        }       
+            item.PickUp += (a) => { currentItemNumber--; SpawnNewObject(); };
+        }
     }
 
     private void Start()
     {
-        while (currentItemNumber <3)
+        while (currentItemNumber < 3)
         {
             SpawnObject();
         }
@@ -43,7 +43,8 @@ public class SpawnManager : MonoBehaviour
     IEnumerator spawnCO()
     {
         yield return new WaitForSeconds(spawnDelay);
-        SpawnObject();
+        if (currentItemNumber < 3)
+            SpawnObject();
         yield return null;
     }
 
@@ -62,7 +63,7 @@ public class SpawnManager : MonoBehaviour
                     done = true;
                     currentItemNumber++;
                     spawnPoint.locked = true;
-                    itemToSpawn.PickUp += (a) => { spawnPoint.locked = false; }; 
+                    itemToSpawn.PickUp += (a) => { spawnPoint.locked = false; };
                     break;
                 }
             }

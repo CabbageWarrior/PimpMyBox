@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         inv = GetComponent<PlayerInventory>();
+
         for (int i = 0; i < spriteRenderers.Length; i++)
         {
             spriteRenderers[i].gameObject.SetActive(i == playerNumber - 1);
@@ -50,7 +51,7 @@ public class Player : MonoBehaviour
     {
         House house = other.GetComponent<House>();
 
-        if (house != null)
+        if (house != null && house.owner == this)
         {
             for (int i = 0; i < inv.inventory.Length; i++)
             {

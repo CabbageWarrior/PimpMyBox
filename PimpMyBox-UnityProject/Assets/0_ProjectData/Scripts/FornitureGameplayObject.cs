@@ -17,12 +17,18 @@ public class FornitureGameplayObject : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.GetComponent<Player>())
+        if (other is BoxCollider2D)
         {
-            if (PickUp != null)
-                PickUp.Invoke(other.GetComponent<Player>());
+            var player = other.GetComponent<Player>();
 
-            DeSpawn();
+            if (player != null && player.Inv.FreeSlots > 0)
+            {
+                Debug.Log(this.name);
+                if (PickUp != null)
+                    PickUp.Invoke(other.GetComponent<Player>());
+                player.Inv.AddItem(this);
+                DeSpawn();
+            }
         }
     }
 
