@@ -923,6 +923,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114962568873960500, guid: ae2676cfcc55ef244b4b8ae29462d282,
+        type: 2}
+      propertyPath: dashSpeedMaxImpulse
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
   m_IsPrefabAsset: 0
