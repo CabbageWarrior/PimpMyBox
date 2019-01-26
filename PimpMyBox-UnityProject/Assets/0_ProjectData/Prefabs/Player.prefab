@@ -142,8 +142,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1964116559952222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: -0.571, y: 1.249, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4115085847533926}
   - {fileID: 4799523785498866}
@@ -269,11 +269,17 @@ MonoBehaviour:
   spriteRenderers:
   - {fileID: 212743127627605590}
   - {fileID: 212751217801154024}
+  dashImage: {fileID: 0}
+  dashAvailableImage: {fileID: 0}
+  vomitAvailableImage: {fileID: 0}
   playerNumber: 1
   movementSpeedMultiplier: 50
   deadMovementAxis: 0.5
   maxSpeed: 10
-  currentSpeed: 0
+  dashDeadAmount: 0.7
+  dashFillTime: 2.5
+  dashCooldownTime: 5
+  dashSpeedMaxImpulse: 15
 --- !u!212 &212589867591770126
 SpriteRenderer:
   m_ObjectHideFlags: 1

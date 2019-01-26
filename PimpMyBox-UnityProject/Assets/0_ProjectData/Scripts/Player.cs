@@ -5,6 +5,8 @@ public class Player : MonoBehaviour
 {
     public SpriteRenderer[] spriteRenderers;
     public Image dashImage;
+    public Image dashAvailableImage;
+    public Image vomitAvailableImage;
     [Space]
     public int playerNumber = 1;
 
@@ -61,6 +63,7 @@ public class Player : MonoBehaviour
                 {
                     currentFillTime = dashFillTime;
                     canChargeDash = false;
+                    dashAvailableImage.gameObject.SetActive(canChargeDash);
                     isDashing = true;
 
                     impulseAmount = dashSpeedMaxImpulse;
@@ -79,6 +82,7 @@ public class Player : MonoBehaviour
             if (canChargeDash && currentFillTime > 0f)
             {
                 canChargeDash = false;
+                dashAvailableImage.gameObject.SetActive(canChargeDash);
                 isDashing = true;
 
                 impulseAmount = dashSpeedMaxImpulse * currentFillTime / dashFillTime;
@@ -105,6 +109,7 @@ public class Player : MonoBehaviour
             if (currentCooldownTime >= dashCooldownTime)
             {
                 canChargeDash = true;
+                dashAvailableImage.gameObject.SetActive(canChargeDash);
                 currentCooldownTime = 0;
             }
         }
