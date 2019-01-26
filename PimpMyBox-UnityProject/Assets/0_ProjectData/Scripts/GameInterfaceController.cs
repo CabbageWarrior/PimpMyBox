@@ -46,6 +46,7 @@ public class GameInterfaceController : MonoBehaviour
         {
             itemImageRef.enabled = true;
             itemImageRef.sprite = playerRef.Inv.inventory[itemIndex].fornitureInfos.HUDView;
+            itemImageRef.preserveAspect = true;
         }
     }
 }
