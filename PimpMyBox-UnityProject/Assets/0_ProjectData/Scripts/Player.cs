@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Mathf.Abs(xAxis) > deadMovementAxis || Mathf.Abs(yAxis) > deadMovementAxis)
+        if ((rb2D.velocity.sqrMagnitude <= maxSpeed * maxSpeed) && Mathf.Abs(xAxis) > deadMovementAxis || Mathf.Abs(yAxis) > deadMovementAxis)
         {
             float rot_z = Mathf.Atan2(-yAxis, xAxis) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, 0f, rot_z);
@@ -98,7 +98,8 @@ public class Player : MonoBehaviour
             if (isDashing)
             {
                 isDashing = false;
-                rb2D.AddForce(new Vector2(transform.right.x, transform.right.y).normalized * impulseAmount, ForceMode2D.Impulse);
+                rb2D.angularVelocity = 0;
+                rb2D.velocity = rb2D.velocity.normalized * impulseAmount;
             }
             currentCooldownTime += Time.deltaTime;
             if (currentCooldownTime >= dashCooldownTime)
@@ -107,7 +108,8 @@ public class Player : MonoBehaviour
                 currentCooldownTime = 0;
             }
         }
-        else
+
+        if (rb2D.velocity.sqrMagnitude <= maxSpeed * maxSpeed)
         {
             rb2D.AddForce(new Vector2(transform.right.x, transform.right.y).normalized * movementSpeedMultiplier);
             if (rb2D.velocity.sqrMagnitude >= maxSpeed * maxSpeed)
