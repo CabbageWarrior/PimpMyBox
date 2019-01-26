@@ -15,12 +15,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2D;
 
     private PlayerInventory inv;
-
+    public PlayerInventory Inv { get { return inv; } }
 
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-
+        inv = GetComponent<PlayerInventory>();
         for (int i = 0; i < spriteRenderers.Length; i++)
         {
             spriteRenderers[i].gameObject.SetActive(i == playerNumber - 1);
@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         {
             for (int i = 0; i < inv.inventory.Length; i++)
             {
-                if (house.AddItem(inv.inventory[i]))
+                if (inv.inventory[i] != null && house.AddItem(inv.inventory[i]))
                     inv.Drop(i);
             }
         }
