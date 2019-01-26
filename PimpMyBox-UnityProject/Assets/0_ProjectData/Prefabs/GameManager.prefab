@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543709649524750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 100, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,26 +52,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fornitureDatabase:
-  - {fileID: 114966888923127044, guid: 99eb18ec87f280a4181f0fade533d7ec, type: 2}
-  - {fileID: 114966888923127044, guid: bc3974af0bb94154180157c061cdec8b, type: 2}
-  - {fileID: 114966888923127044, guid: 1147cea651d059f439139dab20ec5afd, type: 2}
-  - {fileID: 114905517080398168, guid: 63775e83869fd1241ada508da9dbe397, type: 2}
-  - {fileID: 114905517080398168, guid: 6514cf0e12b4ef64a9bfdc4479cd87aa, type: 2}
-  - {fileID: 114905517080398168, guid: 444cc43e77ec1904893a062b62ddadef, type: 2}
-  - {fileID: 114105274637866942, guid: cec214adeb7b0184c9032d8cf31aee84, type: 2}
-  - {fileID: 114105274637866942, guid: c41873a74fa64514e99282058df139e0, type: 2}
-  - {fileID: 114105274637866942, guid: fef7fabfdc22d0a42828173618294665, type: 2}
-  - {fileID: 114213773025194750, guid: 183042f6961e4ae469da586e8cd2fc5e, type: 2}
-  - {fileID: 114213773025194750, guid: 156ffa83eb4bdf744bce8229ec653d65, type: 2}
-  - {fileID: 114213773025194750, guid: c55e83973f613ee4f8bea6685ac281a6, type: 2}
-  - {fileID: 114634802556934976, guid: 2a68e6995bb160c4499faa4eb0da0d74, type: 2}
-  - {fileID: 114634802556934976, guid: 9e0ba17b3cac4f14c9aa5065a8a90416, type: 2}
-  - {fileID: 114634802556934976, guid: 6b6773dc45a4a514198abfe9446b320e, type: 2}
-  - {fileID: 114379517250267278, guid: eddca336f04fefb4dbcf1ce08782193e, type: 2}
-  - {fileID: 114379517250267278, guid: 40df785dbb89134408cbcd7e9723ca7d, type: 2}
-  - {fileID: 114379517250267278, guid: 87da9635016fa2f469022c4d008a21a2, type: 2}
-  - {fileID: 114900234746971774, guid: 5f5f3cab5e9f9fe43a25bfb810d4377e, type: 2}
-  - {fileID: 114900234746971774, guid: c13713009217d8c4da9e3a5f618d334e, type: 2}
-  - {fileID: 114900234746971774, guid: 2ea86faab842bbf4786483e544e07188, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   spawnDelay: 2
-  usedSpawnPoints: []
+  usedSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

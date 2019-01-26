@@ -16,7 +16,9 @@ public class SpawnManager : MonoBehaviour
 
     private void Awake()
     {
-        fornitureDatabase = fornitureDatabase.OrderBy(x => new System.Random()).ToArray();
+        System.Random rnd = new System.Random();
+
+        fornitureDatabase = fornitureDatabase.OrderBy(x => rnd.Next()).ToArray();
 
         foreach (var item in fornitureDatabase)
         {
