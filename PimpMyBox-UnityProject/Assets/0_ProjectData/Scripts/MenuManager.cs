@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -19,8 +21,9 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        SelectButton(buttons[selectedMenuVoice]);
+        SelectButton(selectedMenuVoice);
     }
+
     private void Update()
     {
         if (isMenuEnabled)
@@ -75,7 +78,7 @@ public class MenuManager : MonoBehaviour
 
         selectedMenuVoice--;
 
-        SelectButton(buttons[selectedMenuVoice]);
+        SelectButton(selectedMenuVoice);
     }
     private void Next()
     {
@@ -87,12 +90,19 @@ public class MenuManager : MonoBehaviour
 
         selectedMenuVoice++;
 
-        SelectButton(buttons[selectedMenuVoice]);
+        SelectButton(selectedMenuVoice);
     }
 
-    private void SelectButton(Button button)
+    private void SelectButton(int buttonIndex)
     {
+        Button button = buttons[buttonIndex];
+
         button.Select();
+
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].transform.GetChild(0).gameObject.SetActive(i == buttonIndex);
+        }
     }
     private void PressButton(Button button)
     {
