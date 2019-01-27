@@ -14,5 +14,5 @@ MonoBehaviour:
   type: 1
   set: 2
   onMapView: {fileID: 21300004, guid: 40345c8f650150241b2135174a1e6274, type: 3}
-  HUDView: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  HUDView: {fileID: 21300004, guid: 40345c8f650150241b2135174a1e6274, type: 3}
   value: 10
