@@ -1,11 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 
 public class House : MonoBehaviour
 {
     List<FornitureGameplayObject> storedForniture = new List<FornitureGameplayObject>();
     public Player owner;
+
+    public List<FornitureGameplayObject> StoredForniture
+    {
+        get
+        {
+            return storedForniture;
+        }
+    }
 
     public bool AddItem (FornitureGameplayObject item)
     {

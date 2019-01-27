@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb2D;
 
+    private GameInterfaceController gic;
+
     private PlayerInventory inv;
     public PlayerInventory Inv { get { return inv; } }
 
@@ -42,6 +44,8 @@ public class Player : MonoBehaviour
         {
             spriteRenderers[i].gameObject.SetActive(i == playerNumber - 1);
         }
+
+        gic = FindObjectOfType<GameInterfaceController>();
     }
 
     private void Update()
@@ -134,6 +138,8 @@ public class Player : MonoBehaviour
                 if (inv.inventory[i] != null && house.AddItem(inv.inventory[i]))
                     inv.Drop(i);
             }
+
+            gic.RefreshUI();
         }
     }
 
