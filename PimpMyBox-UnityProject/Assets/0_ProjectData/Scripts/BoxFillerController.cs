@@ -1,20 +1,33 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoxFillerController : MonoBehaviour
 {
     FornitureInstance[] fornitureInstances;
 
-    public House house1;
-    public House house2;
+    public Text player1Score;
+    public Text player2Score;
+
+    public GameObject P1WinCard;
+    public GameObject P2WinCard;
+
+    private GameManager gameManager;
 
     private void Start()
     {
         fornitureInstances = GetComponentsInChildren<FornitureInstance>(true);
 
-        // ToDo: Add research of House components.
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
-        if (house1 == null || house2 == null) return;
+        player1Score.text = gameManager.Player1Score.ToString();
+        player2Score.text = gameManager.Player2Score.ToString();
+
+        if (gameManager.Player1Score > gameManager.Player2Score)
+            P1WinCard.SetActive(true);
+
+        if (gameManager.Player2Score > gameManager.Player1Score)
+            P2WinCard.SetActive(true);
 
         ExecBoxFill();
     }
@@ -25,11 +38,11 @@ public class BoxFillerController : MonoBehaviour
         {
             if (fornitureInstances[i].playerIndex == 1)
             {
-                fornitureInstances[i].CheckPresence(house1);
+                fornitureInstances[i].CheckPresence(gameManager.player1Inventory);
             }
             else
             {
-                fornitureInstances[i].CheckPresence(house2);
+                fornitureInstances[i].CheckPresence(gameManager.player2Inventory);
             }
         }
     }

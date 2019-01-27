@@ -27,9 +27,4 @@ public class House : MonoBehaviour
 
         return succeded;
     }
-
-    public bool CheckExistence(FornitureSet fornitureSet, FornitureType fornitureType)
-    {
-        return storedForniture.Exists(f => f.fornitureInfos.set == fornitureSet && f.fornitureInfos.type == fornitureType);
-    }
 }

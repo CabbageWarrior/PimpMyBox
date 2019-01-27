@@ -8,12 +8,22 @@ public class FornitureInstance : MonoBehaviour
     public FornitureSet fornitureSet;
     public int playerIndex;
 
-    public void CheckPresence(House house)
+    public void CheckPresence(List<Forniture> fornitures)
     {
-        bool exists = house.CheckExistence(fornitureSet, fornitureType);
+        bool exists = false;
+
+        foreach (Forniture obj in fornitures)
+        {
+            if (obj.set == fornitureSet && obj.type == fornitureType)
+            {
+                exists = true;
+                break;
+            }
+        }
+
         gameObject.SetActive(exists);
 
-        if (fornitureType == FornitureType.TAVOLO)
+        if (exists && fornitureType == FornitureType.TAVOLO)
         {
             transform.parent.GetChild(0).gameObject.SetActive(false);
         }

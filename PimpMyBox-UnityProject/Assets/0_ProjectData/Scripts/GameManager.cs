@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,41 +18,60 @@ public class GameManager : MonoBehaviour
     public int Player1Score;
     public int Player2Score;
 
+    private Player p1;
+    private Player p2;
+
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
         timePassed = timer;
+
+        p1 = GameObject.Find("Player 1").GetComponent<Player>();
+        p2 = GameObject.Find("Player 2").GetComponent<Player>();
     }
 
     private void Update()
     {
+        if (timePassed <= 0) return;
+
         timePassed -= Time.deltaTime;
 
         timerLabel.text = Mathf.RoundToInt(timePassed).ToString();
 
-        if (timePassed >= timer)
+        if (timePassed <= 0)
         {
+            timerLabel.text = "0";
             GameOver();
         }
     }
 
     void GameOver()
     {
-        foreach (var item in GameObject.Find("Player1").GetComponent<Player>().Inv.inventory)
+        foreach (var item in p1.Inv.inventory)
         {
-            player1Inventory.Add(item.fornitureInfos);
+            if (item)
+            {
+                player1Inventory.Add(item.fornitureInfos);
+            }
         }
 
-        foreach (var item in GameObject.Find("Player2").GetComponent<Player>().Inv.inventory)
+        foreach (var item in p2.Inv.inventory)
         {
-            player1Inventory.Add(item.fornitureInfos);
+            if (item)
+            {
+                player2Inventory.Add(item.fornitureInfos);
+            }
         }
 
         Player1Score = calculatePoints(player1Inventory.ToArray());
         Player2Score = calculatePoints(player2Inventory.ToArray());
 
+        StartCoroutine(ExitInAWhile());
+    }
+    IEnumerator ExitInAWhile() {
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("End");
-        
+        yield return null;
     }
 
     int calculatePoints(Forniture[] inv)

@@ -11,7 +11,7 @@ public class MenuManager : MonoBehaviour
     private int selectedMenuVoice = 0;
     private bool isMenuEnabled = true;
     private bool canSwitchMenuVoice = true;
-    
+
     private bool isCreditsPanelOpen = false;
 
     public Button[] buttons;
@@ -28,10 +28,33 @@ public class MenuManager : MonoBehaviour
     {
         if (isMenuEnabled)
         {
-            float yAxis = Input.GetAxis("Vertical-P1");
+            float yAxis1 = Input.GetAxis("Vertical-P1");
+            float yAxis2 = Input.GetAxis("Vertical-P2");
 
-            if (yAxis < deadAmount * -1 || yAxis > deadAmount)
+            if (yAxis1 < deadAmount * -1 || yAxis1 > deadAmount)
             {
+                yAxis1 = (yAxis1 < 0 ? -1 : 1);
+            }
+            else
+            {
+                yAxis1 = 0;
+            }
+
+            if (yAxis2 < deadAmount * -1 || yAxis2 > deadAmount)
+            {
+                yAxis2 = (yAxis2 < 0 ? -1 : 1);
+            }
+            else
+            {
+                yAxis2 = 0;
+            }
+
+            float yAxis = yAxis1 + yAxis2;
+
+            if (yAxis != 0)
+            {
+                yAxis = (yAxis < 0 ? -1 : 1);
+            
                 // Thumb in Switch position.
                 if (canSwitchMenuVoice)
                 {
@@ -53,7 +76,7 @@ public class MenuManager : MonoBehaviour
                     canSwitchMenuVoice = true;
             }
 
-            if (Input.GetButton("AButton-P1"))
+            if (Input.GetButton("AButton-P1") || Input.GetButton("AButton-P2"))
             {
                 PressButton(buttons[selectedMenuVoice]);
             }
@@ -61,7 +84,7 @@ public class MenuManager : MonoBehaviour
 
         else if (isCreditsPanelOpen)
         {
-            if (Input.GetButton("BButton-P1"))
+            if (Input.GetButton("BButton-P1") || Input.GetButton("BButton-P2"))
             {
                 CloseCreditsPanel();
             }
@@ -129,7 +152,7 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
 #endif
     }
-    
+
     private void CloseCreditsPanel()
     {
         // ToDo: Toggle a panel.
