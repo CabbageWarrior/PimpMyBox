@@ -19,10 +19,6 @@ public class SpawnManager : MonoBehaviour
     {
         get
         {
-            if (instance == null)
-            {
-                instance = new SpawnManager();
-            }
             return instance;
         }
     }
@@ -40,6 +36,12 @@ public class SpawnManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
+
         System.Random rnd = new System.Random();
 
         fornitureDatabase = fornitureDatabase.OrderBy(x => rnd.Next()).ToArray();
