@@ -57,6 +57,7 @@ public class House : MonoBehaviour
             storedForniture.RemoveAt(rnd);
 
             FindObjectOfType<GameInterfaceController>().RefreshUI();
+            GetComponentInChildren<Animation>().Play();
             success = true;
         }
 
