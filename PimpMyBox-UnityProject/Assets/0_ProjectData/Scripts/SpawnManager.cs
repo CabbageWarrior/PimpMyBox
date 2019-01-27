@@ -5,6 +5,20 @@ using System.Linq;
 
 public class SpawnManager : MonoBehaviour
 {
+    private static SpawnManager instance = null;
+
+    public static SpawnManager Instance
+    {
+        get
+        {
+            if(instance == null)
+            {
+                instance = new SpawnManager();
+            }
+            return instance;
+        }
+    }
+
     private Queue<FornitureGameplayObject> spawnQueue = new Queue<FornitureGameplayObject>();
     public FornitureGameplayObject[] fornitureDatabase;
 
@@ -24,7 +38,7 @@ public class SpawnManager : MonoBehaviour
 
         foreach (var item in fornitureDatabase)
         {
-            spawnQueue.Enqueue(item);
+            EnqueueObject(item);
             item.PickUp += (a) => { currentItemNumber--; SpawnNewObject(); gic.RefreshUI(); };
         }
     }
@@ -40,6 +54,11 @@ public class SpawnManager : MonoBehaviour
     public void SpawnNewObject()
     {
         StartCoroutine(spawnCO());
+    }
+
+    public void EnqueueObject(FornitureGameplayObject item)
+    {
+        spawnQueue.Enqueue(item);
     }
 
     IEnumerator spawnCO()

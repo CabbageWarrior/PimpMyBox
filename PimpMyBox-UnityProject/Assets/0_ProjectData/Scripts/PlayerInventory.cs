@@ -24,6 +24,7 @@ public class PlayerInventory : MonoBehaviour
     {
         if (inventory[index] != null)
         {
+            SpawnManager.Instance.EnqueueObject(inventory[index]);
             inventory[index] = null;
             if (RemovedFromInventory != null)
                 RemovedFromInventory.Invoke(index);

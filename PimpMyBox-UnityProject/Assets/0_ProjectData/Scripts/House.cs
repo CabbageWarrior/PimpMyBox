@@ -20,10 +20,15 @@ public class House : MonoBehaviour
 
         foreach (var forniture in storedForniture)
         {
-            if(forniture == item || item.fornitureInfos.type == forniture.fornitureInfos.type)
+            if(forniture == item)
             {
                 succeded = false;
                 break;
+            }
+
+            if (item.fornitureInfos.type == forniture.fornitureInfos.type)
+            {
+                storedForniture.Remove(forniture);               
             }
         }
 
