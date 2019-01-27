@@ -17,7 +17,7 @@ public class House : MonoBehaviour
     public bool AddItem (FornitureGameplayObject item)
     {
         bool succeded = true;
-
+        FornitureGameplayObject objToSwap = null;
         foreach (var forniture in storedForniture)
         {
             if(forniture == item)
@@ -28,8 +28,14 @@ public class House : MonoBehaviour
 
             if (item.fornitureInfos.type == forniture.fornitureInfos.type)
             {
-                storedForniture.Remove(forniture);               
+                objToSwap = forniture;
             }
+        }
+
+        if (objToSwap != null)
+        {
+            storedForniture.Remove(objToSwap);
+            SpawnManager.Instance.EnqueueObject(objToSwap);
         }
 
         if (succeded)
