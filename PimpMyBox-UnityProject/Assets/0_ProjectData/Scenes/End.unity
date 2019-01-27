@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 57176502}
   - component: {fileID: 57176504}
   - component: {fileID: 57176503}
+  - component: {fileID: 57176505}
   m_Layer: 5
   m_Name: Lampada-Memes
   m_TagString: Untagged
@@ -251,6 +252,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 57176501}
   m_CullTransparentMesh: 0
+--- !u!114 &57176505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57176501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 4
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &99906060
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +276,7 @@ GameObject:
   - component: {fileID: 99906061}
   - component: {fileID: 99906063}
   - component: {fileID: 99906062}
+  - component: {fileID: 99906064}
   m_Layer: 5
   m_Name: Poster-Memes
   m_TagString: Untagged
@@ -320,6 +336,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 99906060}
   m_CullTransparentMesh: 0
+--- !u!114 &99906064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99906060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 5
+  fornitureSet: 2
+  playerIndex: 1
 --- !u!1 &106052949
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +396,7 @@ GameObject:
   - component: {fileID: 227488399}
   - component: {fileID: 227488401}
   - component: {fileID: 227488400}
+  - component: {fileID: 227488402}
   m_Layer: 5
   m_Name: Poster-Mosconi
   m_TagString: Untagged
@@ -425,6 +456,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 227488398}
   m_CullTransparentMesh: 0
+--- !u!114 &227488402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 227488398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 5
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &241186869
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,6 +634,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 795766271}
   - {fileID: 2104745974}
   - {fileID: 1258569425}
   - {fileID: 808674541}
@@ -610,6 +656,7 @@ GameObject:
   - component: {fileID: 281314399}
   - component: {fileID: 281314401}
   - component: {fileID: 281314400}
+  - component: {fileID: 281314402}
   m_Layer: 5
   m_Name: Poster-Furry
   m_TagString: Untagged
@@ -669,6 +716,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 281314398}
   m_CullTransparentMesh: 0
+--- !u!114 &281314402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281314398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 5
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &295909889
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +740,7 @@ GameObject:
   - component: {fileID: 295909890}
   - component: {fileID: 295909892}
   - component: {fileID: 295909891}
+  - component: {fileID: 295909893}
   m_Layer: 5
   m_Name: Soprammobile-Mosconi
   m_TagString: Untagged
@@ -738,6 +800,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 295909889}
   m_CullTransparentMesh: 0
+--- !u!114 &295909893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295909889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 3
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &301730118
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +824,7 @@ GameObject:
   - component: {fileID: 301730119}
   - component: {fileID: 301730121}
   - component: {fileID: 301730120}
+  - component: {fileID: 301730122}
   m_Layer: 5
   m_Name: Lampada-Furry
   m_TagString: Untagged
@@ -807,6 +884,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 301730118}
   m_CullTransparentMesh: 0
+--- !u!114 &301730122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 301730118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 4
+  fornitureSet: 0
+  playerIndex: 2
 --- !u!1 &302917194
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +908,7 @@ GameObject:
   - component: {fileID: 302917195}
   - component: {fileID: 302917197}
   - component: {fileID: 302917196}
+  - component: {fileID: 302917198}
   m_Layer: 5
   m_Name: Tappeto-Mosconi
   m_TagString: Untagged
@@ -876,6 +968,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 302917194}
   m_CullTransparentMesh: 0
+--- !u!114 &302917198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302917194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 0
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &339086322
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +992,7 @@ GameObject:
   - component: {fileID: 339086323}
   - component: {fileID: 339086325}
   - component: {fileID: 339086324}
+  - component: {fileID: 339086326}
   m_Layer: 5
   m_Name: Soprammobile-Memes
   m_TagString: Untagged
@@ -945,6 +1052,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 339086322}
   m_CullTransparentMesh: 0
+--- !u!114 &339086326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 339086322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 3
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &398444045
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1076,7 @@ GameObject:
   - component: {fileID: 398444046}
   - component: {fileID: 398444048}
   - component: {fileID: 398444047}
+  - component: {fileID: 398444049}
   m_Layer: 5
   m_Name: Tappeto-Furry
   m_TagString: Untagged
@@ -1014,6 +1136,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 398444045}
   m_CullTransparentMesh: 0
+--- !u!114 &398444049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 398444045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 0
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &405796594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1256,7 @@ GameObject:
   - component: {fileID: 408595621}
   - component: {fileID: 408595623}
   - component: {fileID: 408595622}
+  - component: {fileID: 408595624}
   m_Layer: 5
   m_Name: Tappeto-Memes
   m_TagString: Untagged
@@ -1179,6 +1316,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408595620}
   m_CullTransparentMesh: 0
+--- !u!114 &408595624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408595620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 0
+  fornitureSet: 2
+  playerIndex: 1
 --- !u!1 &447463142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1340,7 @@ GameObject:
   - component: {fileID: 447463143}
   - component: {fileID: 447463145}
   - component: {fileID: 447463144}
+  - component: {fileID: 447463146}
   m_Layer: 5
   m_Name: Trofeo-Mosconi
   m_TagString: Untagged
@@ -1248,6 +1400,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447463142}
   m_CullTransparentMesh: 0
+--- !u!114 &447463146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447463142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 6
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &496918210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1424,7 @@ GameObject:
   - component: {fileID: 496918211}
   - component: {fileID: 496918213}
   - component: {fileID: 496918212}
+  - component: {fileID: 496918214}
   m_Layer: 5
   m_Name: Sedia-Memes
   m_TagString: Untagged
@@ -1317,6 +1484,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 496918210}
   m_CullTransparentMesh: 0
+--- !u!114 &496918214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 496918210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 1
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &512709637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1616,7 @@ GameObject:
   - component: {fileID: 604044098}
   - component: {fileID: 604044100}
   - component: {fileID: 604044099}
+  - component: {fileID: 604044101}
   m_Layer: 5
   m_Name: Tavolo-Mosconi
   m_TagString: Untagged
@@ -1453,7 +1635,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 838273479}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17583309, y: 0.25}
   m_AnchorMax: {x: 0.58900005, y: 0.5205987}
@@ -1494,6 +1676,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 604044097}
   m_CullTransparentMesh: 0
+--- !u!114 &604044101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 604044097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 2
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &636354974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,6 +1700,7 @@ GameObject:
   - component: {fileID: 636354975}
   - component: {fileID: 636354977}
   - component: {fileID: 636354976}
+  - component: {fileID: 636354978}
   m_Layer: 5
   m_Name: Tappeto-Mosconi
   m_TagString: Untagged
@@ -1563,6 +1760,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636354974}
   m_CullTransparentMesh: 0
+--- !u!114 &636354978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636354974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 0
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &717949550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,6 +1820,7 @@ GameObject:
   - component: {fileID: 739883810}
   - component: {fileID: 739883812}
   - component: {fileID: 739883811}
+  - component: {fileID: 739883813}
   m_Layer: 5
   m_Name: Tappeto-Furry
   m_TagString: Untagged
@@ -1668,6 +1880,89 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 739883809}
   m_CullTransparentMesh: 0
+--- !u!114 &739883813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 739883809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 0
+  fornitureSet: 0
+  playerIndex: 2
+--- !u!1 &795766270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795766271}
+  - component: {fileID: 795766273}
+  - component: {fileID: 795766272}
+  m_Layer: 5
+  m_Name: Tavolo-Cartone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &795766271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795766270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 248578221}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.17583309, y: 0.25}
+  m_AnchorMax: {x: 0.58900005, y: 0.5205987}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &795766272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795766270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 395869cd11103b94e859a54ef21fa91c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &795766273
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795766270}
+  m_CullTransparentMesh: 0
 --- !u!1 &807575930
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,8 +1973,9 @@ GameObject:
   - component: {fileID: 807575931}
   - component: {fileID: 807575933}
   - component: {fileID: 807575932}
+  - component: {fileID: 807575934}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: BoxFillerPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1739,6 +2035,19 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807575930}
   m_CullTransparentMesh: 0
+--- !u!114 &807575934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 807575930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a01c1cb0ea8564f8a88275ead1135c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  house1: {fileID: 0}
+  house2: {fileID: 0}
 --- !u!1 &808674540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +2058,7 @@ GameObject:
   - component: {fileID: 808674541}
   - component: {fileID: 808674543}
   - component: {fileID: 808674542}
+  - component: {fileID: 808674544}
   m_Layer: 5
   m_Name: Tavolo-Mosconi
   m_TagString: Untagged
@@ -1767,7 +2077,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248578221}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17583309, y: 0.25}
   m_AnchorMax: {x: 0.58900005, y: 0.5205987}
@@ -1808,6 +2118,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808674540}
   m_CullTransparentMesh: 0
+--- !u!114 &808674544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808674540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 2
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &826888378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +2142,7 @@ GameObject:
   - component: {fileID: 826888379}
   - component: {fileID: 826888381}
   - component: {fileID: 826888380}
+  - component: {fileID: 826888382}
   m_Layer: 5
   m_Name: Trofeo-Memes
   m_TagString: Untagged
@@ -1877,6 +2202,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 826888378}
   m_CullTransparentMesh: 0
+--- !u!114 &826888382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826888378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 6
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &838273478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,6 +2241,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2084737376}
   - {fileID: 926354338}
   - {fileID: 1655512698}
   - {fileID: 604044098}
@@ -1923,6 +2263,7 @@ GameObject:
   - component: {fileID: 842963635}
   - component: {fileID: 842963637}
   - component: {fileID: 842963636}
+  - component: {fileID: 842963638}
   m_Layer: 5
   m_Name: Lampada-Memes
   m_TagString: Untagged
@@ -1982,6 +2323,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 842963634}
   m_CullTransparentMesh: 0
+--- !u!114 &842963638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842963634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 4
+  fornitureSet: 2
+  playerIndex: 1
 --- !u!1 &926354337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +2347,7 @@ GameObject:
   - component: {fileID: 926354338}
   - component: {fileID: 926354340}
   - component: {fileID: 926354339}
+  - component: {fileID: 926354341}
   m_Layer: 5
   m_Name: Tavolo-Furry
   m_TagString: Untagged
@@ -2010,7 +2366,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 838273479}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17583309, y: 0.25}
   m_AnchorMax: {x: 0.58900005, y: 0.5205987}
@@ -2051,6 +2407,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 926354337}
   m_CullTransparentMesh: 0
+--- !u!114 &926354341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926354337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 2
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &972235928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,6 +2431,7 @@ GameObject:
   - component: {fileID: 972235929}
   - component: {fileID: 972235931}
   - component: {fileID: 972235930}
+  - component: {fileID: 972235932}
   m_Layer: 5
   m_Name: Sedia-Mosconi
   m_TagString: Untagged
@@ -2120,6 +2491,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 972235928}
   m_CullTransparentMesh: 0
+--- !u!114 &972235932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972235928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 1
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &1031143008
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,6 +2515,7 @@ GameObject:
   - component: {fileID: 1031143009}
   - component: {fileID: 1031143011}
   - component: {fileID: 1031143010}
+  - component: {fileID: 1031143012}
   m_Layer: 5
   m_Name: Sedia-Furry
   m_TagString: Untagged
@@ -2189,6 +2575,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031143008}
   m_CullTransparentMesh: 0
+--- !u!114 &1031143012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031143008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 1
+  fornitureSet: 0
+  playerIndex: 2
 --- !u!1 &1035800155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2599,7 @@ GameObject:
   - component: {fileID: 1035800156}
   - component: {fileID: 1035800158}
   - component: {fileID: 1035800157}
+  - component: {fileID: 1035800159}
   m_Layer: 5
   m_Name: Lampada-Furry
   m_TagString: Untagged
@@ -2258,6 +2659,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1035800155}
   m_CullTransparentMesh: 0
+--- !u!114 &1035800159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1035800155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 4
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &1058409818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,6 +2719,7 @@ GameObject:
   - component: {fileID: 1074711021}
   - component: {fileID: 1074711023}
   - component: {fileID: 1074711022}
+  - component: {fileID: 1074711024}
   m_Layer: 5
   m_Name: Trofeo-Furry
   m_TagString: Untagged
@@ -2363,6 +2779,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1074711020}
   m_CullTransparentMesh: 0
+--- !u!114 &1074711024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1074711020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 6
+  fornitureSet: 0
+  playerIndex: 2
 --- !u!1 &1095508217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,6 +2803,7 @@ GameObject:
   - component: {fileID: 1095508218}
   - component: {fileID: 1095508220}
   - component: {fileID: 1095508219}
+  - component: {fileID: 1095508221}
   m_Layer: 5
   m_Name: Poster-Furry
   m_TagString: Untagged
@@ -2432,6 +2863,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1095508217}
   m_CullTransparentMesh: 0
+--- !u!114 &1095508221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1095508217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 5
+  fornitureSet: 0
+  playerIndex: 2
 --- !u!1 &1149167435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,6 +2956,7 @@ GameObject:
   - component: {fileID: 1151038323}
   - component: {fileID: 1151038325}
   - component: {fileID: 1151038324}
+  - component: {fileID: 1151038326}
   m_Layer: 5
   m_Name: Sedia-Mosconi
   m_TagString: Untagged
@@ -2570,6 +3016,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1151038322}
   m_CullTransparentMesh: 0
+--- !u!114 &1151038326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151038322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 1
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &1207504544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,6 +3040,7 @@ GameObject:
   - component: {fileID: 1207504545}
   - component: {fileID: 1207504547}
   - component: {fileID: 1207504546}
+  - component: {fileID: 1207504548}
   m_Layer: 5
   m_Name: Sedia-Furry
   m_TagString: Untagged
@@ -2639,6 +3100,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1207504544}
   m_CullTransparentMesh: 0
+--- !u!114 &1207504548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1207504544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 1
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &1208393657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,6 +3124,7 @@ GameObject:
   - component: {fileID: 1208393658}
   - component: {fileID: 1208393660}
   - component: {fileID: 1208393659}
+  - component: {fileID: 1208393661}
   m_Layer: 5
   m_Name: Trofeo-Furry
   m_TagString: Untagged
@@ -2708,6 +3184,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1208393657}
   m_CullTransparentMesh: 0
+--- !u!114 &1208393661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208393657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 6
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &1208661976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +3244,7 @@ GameObject:
   - component: {fileID: 1258569425}
   - component: {fileID: 1258569427}
   - component: {fileID: 1258569426}
+  - component: {fileID: 1258569428}
   m_Layer: 5
   m_Name: Tavolo-Memes
   m_TagString: Untagged
@@ -2772,7 +3263,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248578221}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17583309, y: 0.25}
   m_AnchorMax: {x: 0.58900005, y: 0.5205987}
@@ -2813,6 +3304,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258569424}
   m_CullTransparentMesh: 0
+--- !u!114 &1258569428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258569424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 2
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &1276295626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +3328,7 @@ GameObject:
   - component: {fileID: 1276295627}
   - component: {fileID: 1276295629}
   - component: {fileID: 1276295628}
+  - component: {fileID: 1276295630}
   m_Layer: 5
   m_Name: Poster-Memes
   m_TagString: Untagged
@@ -2882,6 +3388,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1276295626}
   m_CullTransparentMesh: 0
+--- !u!114 &1276295630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276295626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 5
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &1333156173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +3412,7 @@ GameObject:
   - component: {fileID: 1333156174}
   - component: {fileID: 1333156176}
   - component: {fileID: 1333156175}
+  - component: {fileID: 1333156177}
   m_Layer: 5
   m_Name: Tappeto-Memes
   m_TagString: Untagged
@@ -2951,6 +3472,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1333156173}
   m_CullTransparentMesh: 0
+--- !u!114 &1333156177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333156173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 0
+  fornitureSet: 2
+  playerIndex: 2
 --- !u!1 &1354849035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,6 +3496,7 @@ GameObject:
   - component: {fileID: 1354849036}
   - component: {fileID: 1354849038}
   - component: {fileID: 1354849037}
+  - component: {fileID: 1354849039}
   m_Layer: 5
   m_Name: Sedia-Memes
   m_TagString: Untagged
@@ -3020,6 +3556,62 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1354849035}
   m_CullTransparentMesh: 0
+--- !u!114 &1354849039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1354849035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 1
+  fornitureSet: 2
+  playerIndex: 1
+--- !u!1 &1371669043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1371669045}
+  - component: {fileID: 1371669044}
+  m_Layer: 0
+  m_Name: BoxFillerController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1371669044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371669043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a01c1cb0ea8564f8a88275ead1135c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  house1: {fileID: 0}
+  house2: {fileID: 0}
+--- !u!4 &1371669045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1371669043}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 968.7016, y: 544.2661, z: -2.9459136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1449334032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,6 +3730,7 @@ GameObject:
   - component: {fileID: 1607120382}
   - component: {fileID: 1607120384}
   - component: {fileID: 1607120383}
+  - component: {fileID: 1607120385}
   m_Layer: 5
   m_Name: Soprammobile-Furry
   m_TagString: Untagged
@@ -3197,6 +3790,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1607120381}
   m_CullTransparentMesh: 0
+--- !u!114 &1607120385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1607120381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 3
+  fornitureSet: 0
+  playerIndex: 1
 --- !u!1 &1655512697
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,6 +3814,7 @@ GameObject:
   - component: {fileID: 1655512698}
   - component: {fileID: 1655512700}
   - component: {fileID: 1655512699}
+  - component: {fileID: 1655512701}
   m_Layer: 5
   m_Name: Tavolo-Memes
   m_TagString: Untagged
@@ -3225,7 +3833,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 838273479}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17583309, y: 0.25}
   m_AnchorMax: {x: 0.58900005, y: 0.5205987}
@@ -3266,6 +3874,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1655512697}
   m_CullTransparentMesh: 0
+--- !u!114 &1655512701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655512697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 2
+  fornitureSet: 2
+  playerIndex: 1
 --- !u!1 &1740680925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3312,6 +3934,7 @@ GameObject:
   - component: {fileID: 1751074473}
   - component: {fileID: 1751074475}
   - component: {fileID: 1751074474}
+  - component: {fileID: 1751074476}
   m_Layer: 5
   m_Name: Poster-Mosconi
   m_TagString: Untagged
@@ -3371,6 +3994,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1751074472}
   m_CullTransparentMesh: 0
+--- !u!114 &1751074476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1751074472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 5
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &1761447333
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,6 +4018,7 @@ GameObject:
   - component: {fileID: 1761447334}
   - component: {fileID: 1761447336}
   - component: {fileID: 1761447335}
+  - component: {fileID: 1761447337}
   m_Layer: 5
   m_Name: Lampada-Mosconi
   m_TagString: Untagged
@@ -3440,6 +4078,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761447333}
   m_CullTransparentMesh: 0
+--- !u!114 &1761447337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1761447333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 4
+  fornitureSet: 1
+  playerIndex: 1
 --- !u!1 &1800197106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,6 +4102,7 @@ GameObject:
   - component: {fileID: 1800197107}
   - component: {fileID: 1800197109}
   - component: {fileID: 1800197108}
+  - component: {fileID: 1800197110}
   m_Layer: 5
   m_Name: Soprammobile-Furry
   m_TagString: Untagged
@@ -3509,6 +4162,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1800197106}
   m_CullTransparentMesh: 0
+--- !u!114 &1800197110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1800197106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 3
+  fornitureSet: 0
+  playerIndex: 2
 --- !u!1 &1827621540
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +4186,7 @@ GameObject:
   - component: {fileID: 1827621541}
   - component: {fileID: 1827621543}
   - component: {fileID: 1827621542}
+  - component: {fileID: 1827621544}
   m_Layer: 5
   m_Name: Lampada-Mosconi
   m_TagString: Untagged
@@ -3578,6 +4246,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1827621540}
   m_CullTransparentMesh: 0
+--- !u!114 &1827621544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1827621540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 4
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &1858397311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3588,6 +4270,7 @@ GameObject:
   - component: {fileID: 1858397312}
   - component: {fileID: 1858397314}
   - component: {fileID: 1858397313}
+  - component: {fileID: 1858397315}
   m_Layer: 5
   m_Name: Trofeo-Memes
   m_TagString: Untagged
@@ -3647,6 +4330,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1858397311}
   m_CullTransparentMesh: 0
+--- !u!114 &1858397315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1858397311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 6
+  fornitureSet: 2
+  playerIndex: 1
 --- !u!1 &1911321323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,6 +4354,7 @@ GameObject:
   - component: {fileID: 1911321324}
   - component: {fileID: 1911321326}
   - component: {fileID: 1911321325}
+  - component: {fileID: 1911321327}
   m_Layer: 5
   m_Name: Trofeo-Mosconi
   m_TagString: Untagged
@@ -3716,6 +4414,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911321323}
   m_CullTransparentMesh: 0
+--- !u!114 &1911321327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1911321323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 6
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &1945155403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3762,6 +4474,7 @@ GameObject:
   - component: {fileID: 1954294592}
   - component: {fileID: 1954294594}
   - component: {fileID: 1954294593}
+  - component: {fileID: 1954294595}
   m_Layer: 5
   m_Name: Soprammobile-Memes
   m_TagString: Untagged
@@ -3821,6 +4534,89 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1954294591}
   m_CullTransparentMesh: 0
+--- !u!114 &1954294595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954294591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 3
+  fornitureSet: 2
+  playerIndex: 1
+--- !u!1 &2084737375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2084737376}
+  - component: {fileID: 2084737378}
+  - component: {fileID: 2084737377}
+  m_Layer: 5
+  m_Name: Tavolo-Cartone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2084737376
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084737375}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 838273479}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.17583309, y: 0.25}
+  m_AnchorMax: {x: 0.58900005, y: 0.5205987}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &2084737377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084737375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 395869cd11103b94e859a54ef21fa91c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2084737378
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2084737375}
+  m_CullTransparentMesh: 0
 --- !u!1 &2103599151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3831,6 +4627,7 @@ GameObject:
   - component: {fileID: 2103599152}
   - component: {fileID: 2103599154}
   - component: {fileID: 2103599153}
+  - component: {fileID: 2103599155}
   m_Layer: 5
   m_Name: Soprammobile-Mosconi
   m_TagString: Untagged
@@ -3890,6 +4687,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2103599151}
   m_CullTransparentMesh: 0
+--- !u!114 &2103599155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103599151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 3
+  fornitureSet: 1
+  playerIndex: 2
 --- !u!1 &2104745973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3900,6 +4711,7 @@ GameObject:
   - component: {fileID: 2104745974}
   - component: {fileID: 2104745976}
   - component: {fileID: 2104745975}
+  - component: {fileID: 2104745977}
   m_Layer: 5
   m_Name: Tavolo-Furry
   m_TagString: Untagged
@@ -3918,7 +4730,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 248578221}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.17583309, y: 0.25}
   m_AnchorMax: {x: 0.58900005, y: 0.5205987}
@@ -3959,6 +4771,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2104745973}
   m_CullTransparentMesh: 0
+--- !u!114 &2104745977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2104745973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4874d8f3888b4404893180a99de959fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fornitureType: 2
+  fornitureSet: 0
+  playerIndex: 2
 --- !u!1 &2110791144
 GameObject:
   m_ObjectHideFlags: 0
