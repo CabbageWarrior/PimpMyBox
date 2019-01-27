@@ -45,4 +45,20 @@ public class House : MonoBehaviour
 
         return succeded;
     }
+
+    public bool RemoveRandomItem()
+    {
+        bool success = false;
+
+        int rnd = Random.Range(0, storedForniture.Count);
+
+        if (storedForniture.Count > 0)
+        {
+            storedForniture.RemoveAt(rnd);
+            SpawnManager.Instance.gic.RefreshUI();
+            success = true;
+        }
+
+        return success;
+    }
 }

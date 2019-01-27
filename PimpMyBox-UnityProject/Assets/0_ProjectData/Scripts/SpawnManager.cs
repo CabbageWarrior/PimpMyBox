@@ -7,11 +7,19 @@ public class SpawnManager : MonoBehaviour
 {
     private static SpawnManager instance = null;
 
+    public Player[] players;
+
+    public GameObject[] Beers;
+
+    public float beerSpawnTimer = 20f;
+    float timer;
+    bool isTimerActive = true;
+
     public static SpawnManager Instance
     {
         get
         {
-            if(instance == null)
+            if (instance == null)
             {
                 instance = new SpawnManager();
             }
@@ -41,6 +49,28 @@ public class SpawnManager : MonoBehaviour
             EnqueueObject(item);
             item.PickUp += (a) => { currentItemNumber--; SpawnNewObject(); gic.RefreshUI(); };
         }
+
+
+    }
+
+
+    private void Update()
+    {
+        if (isTimerActive)
+        {
+            
+            timer += Time.deltaTime;
+
+            if(timer > beerSpawnTimer)
+            {
+                var rnd = Random.Range(0, 2);
+
+                Beers[rnd].SetActive(true);
+                isTimerActive = false;
+                timer = 0;
+            }
+        }
+
     }
 
     private void Start()
@@ -49,6 +79,17 @@ public class SpawnManager : MonoBehaviour
         {
             SpawnObject();
         }
+
+        foreach (var item in players)
+        {
+            item.onBeerTaken += BeerIscription;
+        }
+    }
+
+    void BeerIscription(GameObject beer)
+    {
+        beer.SetActive(false);
+        isTimerActive = true;
     }
 
     public void SpawnNewObject()

@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public System.Action<GameObject> onBeerTaken;
+
     public SpriteRenderer[] spriteRenderers;
     public Image dashImage;
     public Image dashAvailableImage;
@@ -35,6 +38,8 @@ public class Player : MonoBehaviour
     private PlayerInventory inv;
     public PlayerInventory Inv { get { return inv; } }
 
+    bool canVomit = false;
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -56,6 +61,7 @@ public class Player : MonoBehaviour
         float yAxis = Input.GetAxis("Vertical-P" + playerNumber.ToString());
 
         float rTriggerAxis = Input.GetAxis("RightTrigger-P" + playerNumber.ToString());
+        
 
         float impulseAmount = 0f;
 
@@ -126,6 +132,15 @@ public class Player : MonoBehaviour
             if (rb2D.velocity.sqrMagnitude >= maxSpeed * maxSpeed)
                 rb2D.velocity = rb2D.velocity.normalized * maxSpeed;
         }
+
+
+        
+    }
+
+    private void Vomit()
+    {
+        canVomit = false;
+        vomitAvailableImage.gameObject.SetActive(canVomit);
     }
 
     #region Collisions
@@ -143,6 +158,15 @@ public class Player : MonoBehaviour
 
             gic.RefreshUI();
         }
+
+        if (other.tag == "Beer")
+        {
+            if (onBeerTaken != null)
+                onBeerTaken.Invoke(other.gameObject);
+            canVomit = true;
+            vomitAvailableImage.gameObject.SetActive(canVomit);
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -162,6 +186,19 @@ public class Player : MonoBehaviour
                 inv.Drop(2);
             if (buttonY)
                 inv.DropAll();
+        }
+
+        if (collision.GetComponent<House>())
+        {
+            float lTriggerAxis = Input.GetAxis("LeftTrigger-P" + playerNumber.ToString());
+            if (lTriggerAxis > dashDeadAmount)
+            {
+                if (canVomit)
+                {
+                    Vomit();
+                    collision.GetComponent<House>().RemoveRandomItem();
+                }
+            }
         }
     }
 

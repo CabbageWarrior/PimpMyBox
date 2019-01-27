@@ -11,6 +11,7 @@ public class Forniture : ScriptableObject
     public FornitureType type;
     public FornitureSet set;
     public Sprite onMapView = null;
-    public Sprite HUDView =  null;
+    public Sprite HUDView = null;
     public int value = 0;
+
 }

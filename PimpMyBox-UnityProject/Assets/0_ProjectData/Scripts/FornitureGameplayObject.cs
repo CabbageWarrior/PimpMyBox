@@ -12,7 +12,7 @@ public class FornitureGameplayObject : MonoBehaviour
     private void Awake()
     {
         sR = GetComponent<SpriteRenderer>();
-        sR.sprite = fornitureInfos.onMapView;
+        sR.sprite = fornitureInfos.onMapView;        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,6 +31,7 @@ public class FornitureGameplayObject : MonoBehaviour
             }
         }
     }
+
 
 
     public void Spawn(Transform where)
