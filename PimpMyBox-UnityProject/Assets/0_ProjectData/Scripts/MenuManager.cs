@@ -122,6 +122,8 @@ public class MenuManager : MonoBehaviour
 
         button.Select();
 
+        AudioSingleton.PlaySound(AudioSingleton.Sound.MenuButton);
+
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].transform.GetChild(0).gameObject.SetActive(i == buttonIndex);
@@ -131,6 +133,8 @@ public class MenuManager : MonoBehaviour
     {
         isMenuEnabled = false;
         button.onClick.Invoke();
+        
+        AudioSingleton.PlaySound(AudioSingleton.Sound.MenuButton);
     }
 
     public void StartMatch()
@@ -155,9 +159,10 @@ public class MenuManager : MonoBehaviour
 
     private void CloseCreditsPanel()
     {
-        // ToDo: Toggle a panel.
         CreditsPanel.SetActive(false);
         isMenuEnabled = true;
         isCreditsPanelOpen = false;
+
+        AudioSingleton.PlaySound(AudioSingleton.Sound.MenuButton);
     }
 }
