@@ -193,7 +193,7 @@ public class Player : MonoBehaviour
             float lTriggerAxis = Input.GetAxis("LeftTrigger-P" + playerNumber.ToString());
             if (lTriggerAxis > dashDeadAmount)
             {
-                if (canVomit)
+                if (canVomit && collision.GetComponent<House>().owner != this)
                 {
                     Vomit();
                     collision.GetComponent<House>().RemoveRandomItem();

@@ -49,8 +49,6 @@ public class SpawnManager : MonoBehaviour
             EnqueueObject(item);
             item.PickUp += (a) => { currentItemNumber--; SpawnNewObject(); gic.RefreshUI(); };
         }
-
-
     }
 
 
