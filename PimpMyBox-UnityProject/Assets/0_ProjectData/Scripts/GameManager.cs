@@ -18,16 +18,16 @@ public class GameManager : MonoBehaviour
     public int Player1Score;
     public int Player2Score;
 
-    private Player p1;
-    private Player p2;
+    private House houseP1;
+    private House houseP2;
 
     private void Start()
     {
         DontDestroyOnLoad(this.gameObject);
         timePassed = timer;
 
-        p1 = GameObject.Find("Player 1").GetComponent<Player>();
-        p2 = GameObject.Find("Player 2").GetComponent<Player>();
+        houseP1 = GameObject.Find("Player 1 Home").GetComponent<House>();
+        houseP2 = GameObject.Find("Player 2 Home").GetComponent<House>();
     }
 
     private void Update()
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-        foreach (var item in p1.Inv.inventory)
+        foreach (var item in houseP1.StoredForniture)
         {
             if (item)
             {
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        foreach (var item in p2.Inv.inventory)
+        foreach (var item in houseP2.StoredForniture)
         {
             if (item)
             {
