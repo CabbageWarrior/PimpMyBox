@@ -46,6 +46,8 @@ public class Player : MonoBehaviour
         }
 
         gic = FindObjectOfType<GameInterfaceController>();
+
+        inv.RemovedFromInventory += (a) => { gic.RefreshUI(); };
     }
 
     private void Update()
