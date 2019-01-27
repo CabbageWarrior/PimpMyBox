@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         float yAxis = Input.GetAxis("Vertical-P" + playerNumber.ToString());
 
         float rTriggerAxis = Input.GetAxis("RightTrigger-P" + playerNumber.ToString());
-        
+
 
         float impulseAmount = 0f;
 
@@ -134,7 +134,7 @@ public class Player : MonoBehaviour
         }
 
 
-        
+
     }
 
     private void Vomit()
@@ -195,8 +195,8 @@ public class Player : MonoBehaviour
             {
                 if (canVomit && collision.GetComponent<House>().owner != this)
                 {
-                    Vomit();
-                    collision.GetComponent<House>().RemoveRandomItem();
+                    if (collision.GetComponent<House>().RemoveRandomItem())
+                        Vomit();
                 }
             }
         }
