@@ -89,18 +89,18 @@ TextureImporter:
       name: Tile2x2_Case_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 400
+        width: 399
         height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5abad3a8df17b434bb9e35750fca4c3d
+      spriteID: 6753b0c54fe655841a5e7b8b4e351669
       vertices: []
       indices: 
       edges: []
@@ -109,18 +109,18 @@ TextureImporter:
       name: Tile2x2_Case_1
       rect:
         serializedVersion: 2
-        x: 400
+        x: 401
         y: 0
-        width: 400
+        width: 399
         height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b827424651072ea4b92d83e3357c610b
+      spriteID: e392ab9dc579c7b47bf6955669c9ac04
       vertices: []
       indices: 
       edges: []
