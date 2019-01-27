@@ -141,6 +141,7 @@ public class Player : MonoBehaviour
     private void Vomit()
     {
         canVomit = false;
+        AudioSingleton.PlaySound(AudioSingleton.Sound.Vomit);
         vomitAvailableImage.gameObject.SetActive(canVomit);
     }
 

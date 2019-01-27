@@ -18,6 +18,7 @@ public class AudioSingleton : MonoBehaviour
         SingleObjTrash,
         MultipleObjTrash,
 
+        Vomit,
     }
 
     static AudioSingleton instance;
@@ -50,7 +51,8 @@ public class AudioSingleton : MonoBehaviour
     public AudioSource dropObj;
     public AudioSource singleObjTrash;
     public AudioSource multipleObjTrash;
-    
+    public AudioSource vomit;
+
 
 
     public static void PlaySound(Sound sound)
@@ -80,6 +82,9 @@ public class AudioSingleton : MonoBehaviour
                 break;
             case Sound.MultipleObjTrash:
                 Instance.multipleObjTrash.Play();
+                break;
+            case Sound.Vomit:
+                Instance.vomit.Play();
                 break;
             default:
                 break;
