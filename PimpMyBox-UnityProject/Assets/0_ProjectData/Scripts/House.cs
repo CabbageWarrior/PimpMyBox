@@ -55,7 +55,8 @@ public class House : MonoBehaviour
         if (storedForniture.Count > 0)
         {
             storedForniture.RemoveAt(rnd);
-            SpawnManager.Instance.gic.RefreshUI();
+
+            FindObjectOfType<GameInterfaceController>().RefreshUI();
             success = true;
         }
 
