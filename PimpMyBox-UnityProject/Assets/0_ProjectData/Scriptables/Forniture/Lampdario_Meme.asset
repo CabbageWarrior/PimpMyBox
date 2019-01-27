@@ -13,6 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 4
   set: 2
-  onMapView: {fileID: 21300034, guid: 40345c8f650150241b2135174a1e6274, type: 3}
-  HUDView: {fileID: 21300034, guid: 40345c8f650150241b2135174a1e6274, type: 3}
+  onMapView: {fileID: 21300040, guid: 40345c8f650150241b2135174a1e6274, type: 3}
+  HUDView: {fileID: 21300040, guid: 40345c8f650150241b2135174a1e6274, type: 3}
   value: 4
