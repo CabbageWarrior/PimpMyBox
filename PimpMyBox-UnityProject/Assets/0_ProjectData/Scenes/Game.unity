@@ -1517,6 +1517,11 @@ Prefab:
       propertyPath: dashAvailableImage
       value: 
       objectReference: {fileID: 286308988}
+    - target: {fileID: 114962568873960500, guid: ae2676cfcc55ef244b4b8ae29462d282,
+        type: 2}
+      propertyPath: maxSpeed
+      value: 7.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
   m_IsPrefabAsset: 0
@@ -2199,6 +2204,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 919188500}
   m_CullTransparentMesh: 0
+--- !u!1 &930889232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1305997764247002, guid: 8e0a4f3ecf9171b4180b1a60547104f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1317131465}
 --- !u!1 &953420502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2592,6 +2602,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: Beers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4880643688137642, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -2773,6 +2788,16 @@ Prefab:
       propertyPath: spawnDelay
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: Beers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1867463032}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: Beers.Array.data[1]
+      value: 
+      objectReference: {fileID: 930889232}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
   m_IsPrefabAsset: 0
@@ -3290,6 +3315,26 @@ Prefab:
     - target: {fileID: 1205081801437980, guid: 8e0a4f3ecf9171b4180b1a60547104f6, type: 2}
       propertyPath: m_TagString
       value: Beer
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104728940402538, guid: 8e0a4f3ecf9171b4180b1a60547104f6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: f5b287fc6fd8ff044a1e9dcd09d724a5,
+        type: 3}
+    - target: {fileID: 212850252921985016, guid: 8e0a4f3ecf9171b4180b1a60547104f6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: f5b287fc6fd8ff044a1e9dcd09d724a5,
+        type: 3}
+    - target: {fileID: 1205081801437980, guid: 8e0a4f3ecf9171b4180b1a60547104f6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305997764247002, guid: 8e0a4f3ecf9171b4180b1a60547104f6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 212095102200846360, guid: 8e0a4f3ecf9171b4180b1a60547104f6, type: 2}
@@ -4414,6 +4459,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 114962568873960500, guid: ae2676cfcc55ef244b4b8ae29462d282,
+        type: 2}
+      propertyPath: maxSpeed
+      value: 7.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae2676cfcc55ef244b4b8ae29462d282, type: 2}
   m_IsPrefabAsset: 0
@@ -4913,6 +4963,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1852383374}
   m_CullTransparentMesh: 0
+--- !u!1 &1867463032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1205081801437980, guid: 8e0a4f3ecf9171b4180b1a60547104f6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1317131465}
 --- !u!1 &1876330177
 GameObject:
   m_ObjectHideFlags: 0
