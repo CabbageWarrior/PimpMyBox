@@ -9,6 +9,8 @@ public class EndSceneManager : MonoBehaviour
     {
         if (Input.GetButton("BButton-P1") || Input.GetButton("BButton-P2"))
         {
+            AudioSingleton.PlaySound(AudioSingleton.Sound.MenuButton);
+
             Destroy(GameObject.Find("GameManager"));
 
             SceneManager.LoadScene("Intro");

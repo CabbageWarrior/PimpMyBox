@@ -96,6 +96,7 @@ public class Player : MonoBehaviour
                 canChargeDash = false;
                 dashAvailableImage.gameObject.SetActive(canChargeDash);
                 isDashing = true;
+                AudioSingleton.PlaySound(AudioSingleton.Sound.Dash);
 
                 impulseAmount = dashSpeedMaxImpulse * currentFillTime / dashFillTime;
                 currentFillTime = 0;
@@ -150,10 +151,18 @@ public class Player : MonoBehaviour
 
         if (house != null && house.owner == this)
         {
+            bool almostOneToHome = false;
+
             for (int i = 0; i < inv.inventory.Length; i++)
             {
                 if (inv.inventory[i] != null && house.AddItem(inv.inventory[i]))
-                    inv.Drop(i);
+                {
+                    inv.Drop(i, false);
+                    almostOneToHome = true;
+                }
+
+                if (almostOneToHome)
+                    AudioSingleton.PlaySound(AudioSingleton.Sound.DropObject);
             }
 
             gic.RefreshUI();
@@ -165,6 +174,7 @@ public class Player : MonoBehaviour
                 onBeerTaken.Invoke(other.gameObject);
             canVomit = true;
             vomitAvailableImage.gameObject.SetActive(canVomit);
+            AudioSingleton.PlaySound(AudioSingleton.Sound.PickupObject);
         }
 
     }
@@ -199,6 +209,14 @@ public class Player : MonoBehaviour
                         Vomit();
                 }
             }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<Player>())
+        {
+            AudioSingleton.PlaySound(AudioSingleton.Sound.PVPBounce);
         }
     }
 
