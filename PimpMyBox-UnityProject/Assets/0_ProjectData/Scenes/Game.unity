@@ -2686,6 +2686,11 @@ Prefab:
       propertyPath: Beers.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: players.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4880643688137642, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
       propertyPath: m_LocalPosition.x
       value: 100
@@ -2877,6 +2882,16 @@ Prefab:
       propertyPath: Beers.Array.data[1]
       value: 
       objectReference: {fileID: 930889232}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: players.Array.data[0]
+      value: 
+      objectReference: {fileID: 1120231041}
+    - target: {fileID: 114679021375704980, guid: e82c09d7d2db09544806f1a5e0ad9b47,
+        type: 2}
+      propertyPath: players.Array.data[1]
+      value: 
+      objectReference: {fileID: 1267043350}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82c09d7d2db09544806f1a5e0ad9b47, type: 2}
   m_IsPrefabAsset: 0
