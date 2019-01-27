@@ -40,7 +40,6 @@ public class SpawnManager : MonoBehaviour
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
 
         System.Random rnd = new System.Random();
 
