@@ -54,6 +54,13 @@ public class SpawnManager : MonoBehaviour
     {
         Debug.Log("asd");
         bool done = false;
+
+        if (spawnQueue.Count == 0)
+        {
+            Debug.Log("No new objects available for spawn!");
+            return;
+        }
+
         var itemToSpawn = spawnQueue.Dequeue();
         while (!done)
         {
